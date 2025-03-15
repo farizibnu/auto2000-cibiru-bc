@@ -14,18 +14,18 @@ import { MdBookOnline, MdPriceChange, MdOutlineModeOfTravel, MdCarRepair } from 
 // Menu items.
 const items = [
     {
-        title: "Booking Service",
-        url: "#",
+        title: "Jadwal Service",
+        url: "/",
         icon: MdBookOnline,
     },
     {
         title: "Estimasi Harga",
-        url: "#",
+        url: "/estimation",
         icon: MdPriceChange,
     },
     {
-        title: "Website Auto2000 Cibiru",
-        url: "#",
+        title: "B&P Salon",
+        url: "/",
         icon: MdOutlineModeOfTravel,
     },
 ]
@@ -35,16 +35,13 @@ export function AppSidebar() {
         <Sidebar collapsible="offcanvas">
             <SidebarContent>
                 <SidebarGroup>
-                    <SidebarGroupLabel>
-                        <div className="flex items-center gap-2">
-                            <MdCarRepair size={'1.5em'} />
-                            <span className="font-bold italic">Auto <span className="text-red-500">2000</span></span>
-                        </div>
-                    </SidebarGroupLabel>
+                    <div className="w-24 h-auto py-10 mx-auto flex items-center justify-center">
+                        <img src="/logo/auto2000-logo.png" alt="auto2000-logo" />
+                    </div>
                     <SidebarGroupContent>
                         <SidebarMenu>
                             {items.map((item) => (
-                                <SidebarMenuItem key={item.title}>
+                                <SidebarMenuItem key={item.title} className="font-semibold">
                                     <SidebarMenuButton asChild>
                                         <a href={item.url}>
                                             <item.icon />
