@@ -8,7 +8,7 @@ export default function About() {
                 <div className="w-2/3 text-center items-center justify-center flex flex-col gap-2 p-2">
                     <p className="uppercase font-semibold text-xs">Kunjungi <span className="text-red-500">Sekarang</span></p>
                     <p className="text-[6px]">Kunjungi lokasi <span className="font-semibold">Auto2000 Bodi & Cat</span> terdekat untuk informasi lebih lanjut.</p>
-                    <div className="p-2 bg-red-500 rounded-sm text-white font-medium text-[9px] w-fit">Website Resmi Auto2000</div>
+                    <div className="px-2 py-1 bg-red-500 rounded-sm text-white font-medium text-[9px] w-fit">Website Resmi Auto2000</div>
                 </div>
             </div>
             <div className="p-2 flex flex-col gap-4">

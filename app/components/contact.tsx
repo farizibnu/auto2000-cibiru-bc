@@ -1,3 +1,5 @@
+import { MdWhatsapp } from "react-icons/md";
+
 export default function Contact() {
     return (
         <div className="p-2">
@@ -12,11 +14,12 @@ export default function Contact() {
                     </div>
                 </div>
                 <div>
-                    <div className="rounded-full w-10 h-10 bg-green-500"></div>
+                    <div className="rounded-full w-8 h-8 bg-green-500 flex justify-center items-center">
+                        <MdWhatsapp className="text-white h-6 w-auto" />
+                    </div>
                 </div>
             </div>
-            <hr className="my-3"/>
-            {/*  */}
+            <hr className="my-3" />
             <div className="flex gap-2 justify-between">
                 <div className="flex gap-2 items-center">
                     <div className="rounded-full w-10 h-10 bg-red-500"></div>
@@ -26,10 +29,12 @@ export default function Contact() {
                     </div>
                 </div>
                 <div>
-                    <div className="rounded-full w-10 h-10 bg-green-500"></div>
+                    <div className="rounded-full w-8 h-8 bg-green-500 flex justify-center items-center">
+                        <MdWhatsapp className="text-white h-6 w-auto" />
+                    </div>
                 </div>
             </div>
-            <hr className="my-3"/>
+            <hr className="mt-3" />
         </div>
     )
 }
